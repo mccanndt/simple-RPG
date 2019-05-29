@@ -37,7 +37,7 @@ CREATE TABLE player (
 CREATE TABLE item (
   ID			INT			NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
   Name			VARCHAR(45)	NOT NULL,
-  Description	VARCHAR(100),
+  FlavorText	VARCHAR(100),
   Power			INT			NOT NULL,
   Defense		INT			NOT NULL,
   Level			INT			NOT NULL,
@@ -110,7 +110,7 @@ GRANT SELECT, INSERT, DELETE, UPDATE ON simpleRPG.* TO simpleRPG_user@localhost;
 -- -----------------------------------------------------
 -- Insert Item
 -- -----------------------------------------------------
-INSERT INTO item (Name, Description, Power, Defense, Level, Slot, Rarity, Value, IconPath) VALUES
+INSERT INTO item (Name, FlavorText, Power, Defense, Level, Slot, Rarity, Value, IconPath) VALUES
 -- Commons - Level 1
 ('Paper Hat', '', 0, 2, 1, 'Head', 'Common', 1, ''),
 ('Cloth Shirt', '', 0, 2, 1, 'Body', 'Common', 2, ''),
