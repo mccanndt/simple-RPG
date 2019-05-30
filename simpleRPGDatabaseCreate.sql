@@ -112,7 +112,7 @@ GRANT SELECT, INSERT, DELETE, UPDATE ON simpleRPG.* TO simpleRPG_user@localhost;
 -- -----------------------------------------------------
 INSERT INTO item (Name, FlavorText, Power, Defense, Level, Slot, Rarity, Value, IconPath) VALUES
 -- Commons - Level 1
-('Paper Hat', '', 0, 2, 1, 'Head', 'Common', 1, ''),
+('Paper Hat', 'In the shape of a sailboat', 0, 2, 1, 'Head', 'Common', 1, ''),
 ('Cloth Shirt', '', 0, 2, 1, 'Body', 'Common', 2, ''),
 ('Cloth Pants', '', 0, 2, 1, 'Leg', 'Common', 2, ''),
 ('Cloth Sandals', '', 0, 2, 1, 'Boot', 'Common', 2, ''),
