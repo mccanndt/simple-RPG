@@ -113,16 +113,16 @@ GRANT SELECT, INSERT, DELETE, UPDATE ON simpleRPG.* TO simpleRPG_user@localhost;
 -- -----------------------------------------------------
 INSERT INTO item (Name, FlavorText, Power, Defense, Level, Slot, Rarity, Value, IconPath) VALUES
 -- Commons - Level 1
-('Paper Hat', 'In the shape of a sailboat', 0, 2, 1, 'Head', 'Common', 1, ''),
-('Cloth Shirt', '', 0, 2, 1, 'Body', 'Common', 2, ''),
-('Cloth Pants', '', 0, 2, 1, 'Leg', 'Common', 2, ''),
-('Cloth Sandals', '', 0, 2, 1, 'Boot', 'Common', 2, ''),
-('A Ball of Mud', '', 2, 2, 1, 'Jewelry', 'Common', 2, ''),
+('Paper Hat', 'In the shape of a sailboat.', 0, 2, 1, 'Head', 'Common', 1, ''),
+('Cloth Shirt', 'Hawaiian. Minimal amount of buttons used.', 0, 2, 1, 'Body', 'Common', 2, ''),
+('Cloth Pants', 'Silky smooth.', 0, 2, 1, 'Leg', 'Common', 2, ''),
+('Cloth Sandals', 'Soft and quiet, but not much protection.', 0, 2, 1, 'Boot', 'Common', 2, ''),
+('A Ball of Mud', 'Stress relief is invaluable.', 2, 2, 1, 'Jewelry', 'Common', 2, ''),
 ('A Stick', 'What''s brown and sticky?', 8, 0, 1, 'Weapon', 'Common', 3, ''),
 -- Commons - Level 5
 ('Rusty Bucket', 'Empty out the fried pickle spears and use for cranium protection.', 0, 10, 5, 'Head', 'Common', 1, ''),
 ('Hide Jerkin', 'Made from the hides of your enemies.', 0, 10, 5, 'Body', 'Common', 2, ''),
-('Camo Trousers', 'Tough to see, but plenty of cargo pockets.', 0, 10, 5, 'Leg', 'Common', 2, ''),
+('Work Slacks', 'Battered and torn. Expensive at one time, but probably not anymore.', 0, 10, 5, 'Leg', 'Common', 2, ''),
 ('Leather Boots', 'Found in a local Hot Topic.', 0, 10, 5, 'Boot', 'Common', 2, ''),
 ('Twine Necklace', 'This prime-time twine necklace uses fine twine made of thyme', 10, 10, 5, 'Jewelry', 'Common', 2, ''),
 ('Stone Axe', 'Simple, but effective.', 40, 0, 5, 'Weapon', 'Common', 3, ''),
@@ -148,26 +148,26 @@ INSERT INTO item (Name, FlavorText, Power, Defense, Level, Slot, Rarity, Value, 
 ('Generic Tribal Tattoo', 'Adds over 9000 cool points.', 250, 250, 30, 'Jewelry', 'Rare', 2, ''),
 ('Broken Beer Bottle', 'A makeshift weapon when the reunion turns into a brawl.', 1000, 0, 30, 'Weapon', 'Rare', 3, ''),
 -- Rare - Level 50
-('', '', 60, 860, 50, 'Head', 'Rare', 1, ''),
-('', '', 40, 890, 50, 'Body', 'Rare', 2, ''),
-('', '', 40, 1000, 50, 'Leg', 'Rare', 2, ''),
-('', '', 40, 1030, 50, 'Boot', 'Rare', 2, ''),
-('', '', 900, 900, 50, 'Jewelry', 'Rare', 2, ''),
-('', '', 5000, 160, 50, 'Weapon', 'Rare', 3, ''),
+('Blindfold', 'Unsure how this helps, but some people like it.', 60, 860, 50, 'Head', 'Rare', 1, ''),
+('Fur Coat', 'This same coat you may have seen at a thrift shop.', 40, 890, 50, 'Body', 'Rare', 2, ''),
+('Leather Chaps', 'You have other pants to wear too right?', 40, 1000, 50, 'Leg', 'Rare', 2, ''),
+('Studded Biker Boots', 'Ok now this is getting weird.', 40, 1030, 50, 'Boot', 'Rare', 2, ''),
+('50 Shades of Grey', 'Last known copy that was not destroyed from overuse.', 900, 900, 50, 'Jewelry', 'Rare', 2, ''),
+('Bull whip', 'When a problem comes along, You must whip it', 5000, 160, 50, 'Weapon', 'Rare', 3, ''),
 -- Legendary - Level 75
-('', '', 100, 1200, 75, 'Head', 'Legendary', 1, ''),
-('', '', 100, 1290, 75, 'Body', 'Legendary', 2, ''),
-('', '', 140, 1520, 75, 'Leg', 'Legendary', 2, ''),
-('', '', 120, 1400, 75, 'Boot', 'Legendary', 2, ''),
-('', '', 1300, 1300, 75, 'Jewelry', 'Legendary', 100, ''),
-('', '', 9200, 600, 75, 'Weapon', 'Legendary', 3, ''),
+('Red Bandana', 'Keeps sweat out of your eyes and that is all you need.', 100, 1200, 75, 'Head', 'Legendary', 1, ''),
+('Ammo Belt', 'More offense is sometimes the best defense.', 100, 1290, 75, 'Body', 'Legendary', 2, ''),
+('Camo Pants', 'Tough to see, with plenty of cargo pockets.', 140, 1520, 75, 'Leg', 'Legendary', 2, ''),
+('Army Boots', 'Tan with a little bit of red splotches.', 120, 1400, 75, 'Boot', 'Legendary', 2, ''),
+('Dog Tags', 'They were not yours, but now they are.', 1300, 1300, 75, 'Jewelry', 'Legendary', 100, ''),
+('Machine Gun', 'Packs a massive punch, a lot of massive punches, at a high rate of punching.', 9200, 600, 75, 'Weapon', 'Legendary', 3, ''),
 -- Legendairy - Level 100
-('', '', 100, 2000, 100, 'Head', 'Legendairy', 1, ''),
-('', '', 160, 2070, 100, 'Body', 'Legendairy', 2, ''),
-('', '', 140, 2120, 100, 'Leg', 'Legendairy', 2, ''),
-('', '', 120, 2180, 100, 'Boot', 'Legendairy', 2, ''),
-('The Cowbell', '', 2100, 2100, 100, 'Jewelry', 'Legendairy', 100, ''),
-('A Drumstick', '', 17776, 600, 100, 'Weapon', 'Legendairy', 100, '');
+('Cheesehead Hat', 'Taken from a Green Bay Packers fan.', 100, 2000, 100, 'Head', 'Legendairy', 1, ''),
+('Four Pronged Belly Protector', 'Udderly strong.', 160, 2070, 100, 'Body', 'Legendairy', 2, ''),
+('Calf-Length Khakis', 'Neat cow print too, for style points and to help sneak up on cows.', 140, 2120, 100, 'Leg', 'Legendairy', 2, ''),
+('COWboy Boots', 'Made from rattlesnake skin probably', 120, 2180, 100, 'Boot', 'Legendairy', 2, ''),
+('The Cowbell', 'The only known artifact that can defeat the Reaper.', 2100, 2100, 100, 'Jewelry', 'Legendairy', 100, ''),
+('A Drumstick', 'Perfect combination for The Cowbell', 17776, 600, 100, 'Weapon', 'Legendairy', 100, '');
 
 -- -----------------------------------------------------
 -- Insert Enemy
