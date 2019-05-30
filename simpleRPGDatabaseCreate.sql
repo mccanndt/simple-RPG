@@ -79,6 +79,7 @@ CREATE TABLE enemy (
   Level			INT			NOT NULL,
   IsBoss		TINYINT(1)	NOT NULL	DEFAULT 0,
   BaseExp		INT			NOT NULL,
+  AttackRate	DOUBLE(5,2)	NOT NULL,
   IsActive		TINYINT(1)	NOT NULL	DEFAULT 1,
   DateCreated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP,
   DateUpdated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP	ON UPDATE CURRENT_TIMESTAMP,
@@ -166,4 +167,31 @@ INSERT INTO item (Name, FlavorText, Power, Defense, Level, Slot, Rarity, Value, 
 ('', '', 140, 2120, 100, 'Leg', 'Legendairy', 2, ''),
 ('', '', 120, 2180, 100, 'Boot', 'Legendairy', 2, ''),
 ('The Cowbell', '', 2100, 2100, 100, 'Jewelry', 'Legendairy', 100, ''),
-('A Drumstick', '', 17776, 600, 100, 'Weapon', 'Legendairy', 100, '')
+('A Drumstick', '', 17776, 600, 100, 'Weapon', 'Legendairy', 100, '');
+
+-- -----------------------------------------------------
+-- Insert Enemy
+-- -----------------------------------------------------
+INSERT INTO enemy (Name, BasePower, BaseDefense, BaseHealth, Level, IsBoss, BaseExp, AttackRate) VALUES
+-- Level 1
+('', 8, 7, 55, 1, 0, 1.5),
+('', 7, 6, 40, 1, 0, 0, 1),
+('', 7, 6, 45, 1, 0, 0, 1.2),
+('', 9, 9, 100, 1, 1, 1),
+-- Level 5
+('', 9, 9, 40, 5, 0, 1),
+('', 10, 10, 50, 5, 0, 1.2),
+('', 11, 11, 70, 5, 0, 1.5),
+('', 13, 13, 150, 5, 1, 1),
+-- Level 10
+('', 30, 29, , 10, 0, 0),
+-- Level 20
+('', 0, 0, 0, 20, 0, 0),
+-- Level 30
+('', 0, 0, 0, 30, 0, 0),
+-- Level 50
+('', 0, 0, 0, 50, 0, 0),
+-- Level 75
+('', 0, 0, 0, 75, 0, 0),
+-- Level 100
+('', 0, 0, 0, 100, 0, 0)
