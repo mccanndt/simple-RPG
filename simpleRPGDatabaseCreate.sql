@@ -6,33 +6,6 @@ CREATE SCHEMA IF NOT EXISTS simpleRPG;
 USE simpleRPG;
 
 -- -----------------------------------------------------
--- Table Player
--- -----------------------------------------------------
-CREATE TABLE player (
-  ID			INT			NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
-  UserName		VARCHAR(45)	NOT NULL,
-  Password		VARCHAR(45)	NOT NULL,
-  BasePower		INT			NOT NULL,
-  BaseDefense	INT			NOT NULL,
-  BaseHealth	INT			NOT NULL,
-  Level			INT			NOT NULL,
-  InventorySize	INT			NOT NULL,
-  CurrentExp	INT			NOT NULL,
-  HeadItemID	INT,
-  BodyItemID	INT,
-  LegItemID		INT,
-  BootItemID	INT,
-  JewelryItemID	INT,
-  WeaponItemID	INT,
-  IconPath		VARCHAR(255),
-  IsActive		TINYINT(1)	NOT NULL	DEFAULT 1,
-  DateCreated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP,
-  DateUpdated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP	ON UPDATE CURRENT_TIMESTAMP,
-  UpdatedByUser INT			NOT NULL	DEFAULT 1,
-  CONSTRAINT uname UNIQUE (UserName)
-);
-
--- -----------------------------------------------------
 -- Table Item
 -- -----------------------------------------------------
 CREATE TABLE item (
@@ -54,12 +27,34 @@ CREATE TABLE item (
 );
 
 -- -----------------------------------------------------
+-- Table Player
+-- -----------------------------------------------------
+CREATE TABLE player (
+  ID			INT			NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
+  UserName		VARCHAR(45)	NOT NULL,
+  Password		VARCHAR(45)	NOT NULL,
+  BasePower		INT			NOT NULL,
+  BaseDefense	INT			NOT NULL,
+  BaseHealth	INT			NOT NULL,
+  Level			INT			NOT NULL,
+  InventorySize	INT			NOT NULL,
+  CurrentExp	INT			NOT NULL,
+  IconPath		VARCHAR(255),
+  IsActive		TINYINT(1)	NOT NULL	DEFAULT 1,
+  DateCreated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP,
+  DateUpdated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP	ON UPDATE CURRENT_TIMESTAMP,
+  UpdatedByUser INT			NOT NULL	DEFAULT 1,
+  CONSTRAINT uname UNIQUE (UserName)
+);
+
+-- -----------------------------------------------------
 -- Table Inventory
 -- -----------------------------------------------------
 CREATE TABLE inventory (
   ID			INT			NOT NULL	AUTO_INCREMENT	PRIMARY KEY,
   PlayerID		INT			NOT NULL,
   ItemID		INT			NOT NULL,
+  isEquipped	TINYINT(1),
   IsActive		TINYINT(1)	NOT NULL	DEFAULT 1,
   DateCreated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP,
   DateUpdated	DATETIME	NOT NULL	DEFAULT CURRENT_TIMESTAMP	ON UPDATE CURRENT_TIMESTAMP,
