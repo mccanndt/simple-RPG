@@ -1,0 +1,62 @@
+div {
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.container {
+    background-color:#2E4272;
+    display:flex;
+}
+.fixed {
+    background-color:#4F628E;
+    width: 50%;
+}
+.flex-item {
+    background-color:#7887AB;
+    flex-grow: 1;
+}
+
+.player-equipment-grid {
+    display: grid;
+    margin: 0 auto;
+    width: 228px;
+    height: 304px;
+    grid-template-columns: auto auto auto;
+}
+
+.enemy-img {
+    width: 256px;
+    height: 256px;
+}
+
+.inventory-grid-container {
+    background-color: #2E4272;
+}
+
+.inventory-grid {
+    display: grid;
+    margin: 0 auto;
+    width: 912px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.grid-item {
+    background-color: rgb(159, 170, 197);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+}
+
+.player-grid-item {
+    background-color: rgba(159, 170, 197, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+}
