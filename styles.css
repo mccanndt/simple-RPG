@@ -1,97 +1,48 @@
-body {
-    background-color:#2E4272;
-}
 div {
-    color: #fff;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
     padding: 10px;
-    text-align: center;
-    -webkit-user-select: none; /* Safari 3.1+ */
-    -moz-user-select: none; /* Firefox 2+ */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard syntax */
-}
-.container {
-    background-color:#2E4272;
-    display:flex;
-}
-.fixed {
-    background-color:#4F628E;
-    width: 50%;
-}
-.flex-item {
-    background-color:#7887AB;
-    flex-grow: 1;
-    text-align: center;
+    color: white;
 }
 
-.player-equipment-grid {
-    display: grid;
+.inv-grid {
     margin: 0 auto;
-    width: 228px;
-    height: 304px;
-    grid-template-columns: auto auto auto;
+    max-width: 912px;
+    border: none;
+    padding: 0px;
 }
 
-.container-child {
-    display: flex;
+.inv-grid-item {
+    font-size: 18px;
+    text-align: center;
+    width: 64px;
+    height: 64px;
+    min-width: 76px;
+    min-height: 76px;
+    padding: 5px;
+    border: 1px solid;
+    background-color: rgb(159, 170, 197);
+}
+
+.padding-sm {
+    padding: 5px;
 }
 
 .enemy-img {
-    width: 256px;
-    height: 256px;
-    display: flex;
+    min-width: 256px;
+    min-height: 256px;
+    max-width: 256px;
+    max-height: 256px;
+    padding: 0px;
+    border: none;
 }
 
-.inventory-grid-container {
-    background-color: #2E4272;
+.dark-blue {
+    background-color:rgb(46, 66, 114);
 }
 
-.inventory-grid {
-    display: grid;
-    margin: 0 auto;
-    width: 912px;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+.blue {
+    background-color:rgb(79, 98, 142);
 }
 
-.grid-item {
+.light-blue {
     background-color: rgb(159, 170, 197);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 18px;
-    text-align: center;
-    width: 64px;
-    height: 64px;
-}
-
-.player-grid-item {
-    background-color: rgba(159, 170, 197, 0);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 18px;
-    text-align: center;
-    width: 64px;
-    height: 64px;
-}
-
-progress {
-    -webkit-appearance: none; /* Safari 3.1+ */
-    -moz-appearance: none; /* Firefox 2+ */
-    -ms-appearance: none; /* IE 10+ */
-    appearance: none; /* Standard syntax */
-    height: 25px;
-    width: 100%;
-	position: relative;
-    background: #555;
-    
-}
-
-progress[value]::-moz-progress-bar {
-    background-color: rgb(53, 230, 18);
-}
-progress[value]::-webkit-progress-bar {
-    background-color: rgb(53, 230, 18);
-}
-progress[value]::-ms-progress-bar {
-    background-color: rgb(53, 230, 18);
 }
